@@ -59,7 +59,10 @@ h1{margin:0;font-size:clamp(30px,5vw,44px);line-height:1.2;letter-spacing:-0.035
 .notes h3{margin:0 0 12px;font-size:18px;letter-spacing:-0.02em}
 .notes ol,.notes ul{margin:0;padding-left:20px;display:grid;gap:6px;font-size:15px;color:var(--mute)}
 .notes li::marker{color:var(--brand);font-weight:700}
-footer{margin-top:44px;font-size:13px;color:var(--mute)}
+.howto{margin-top:24px;background:var(--chip);border:1px solid var(--line);border-radius:18px;padding:26px 28px;display:grid;gap:10px}
+.howto h3{margin:0;font-size:18px;letter-spacing:-0.02em;color:var(--brand-ink)}
+.howto p{margin:0;font-size:15px;color:var(--fg);max-width:70ch}
+footer{margin-top:36px;font-size:13px;color:var(--mute)}
 
 @media (max-width:860px){ .grid,.notes{grid-template-columns:minmax(0,1fr)} }
 @media (max-width:480px){ .card{grid-template-columns:minmax(0,1fr)} .thumb{aspect-ratio:4/3} .wrap{padding-block:36px 56px} }
@@ -174,7 +177,13 @@ footer{margin-top:44px;font-size:13px;color:var(--mute)}
     </section>
   </div>
 
-  <footer>페이지 보기는 카페 화면과 같은 가로 860px로 열려요. 휴대폰에서는 화면에 맞게 축소돼 보여요. 카페 업로드용 분할 파일은 시안 확정 후 따로 전달드려요.</footer>
+  <section class="howto">
+    <h3>카페에는 이렇게 올라가요</h3>
+    <p>네이버 카페 글쓰기 에디터(스마트에디터 ONE)는 HTML 입력을 지원하지 않아요. 그래서 이 페이지는 시안 확인용이고, 시안이 확정되면 카페에 바로 올릴 수 있도록 <b>섹션별로 잘라낸 이미지(가로 860px, 44~48장)</b>와 움직이는 표지 GIF로 전달드려요.</p>
+    <p>이미지 글은 검색에 본문이 잡히지 않으니, 업로드할 때 상품명·일정 요약·가격 같은 핵심 문구를 이미지 사이에 글자로 함께 넣는 것을 권해요. 넣을 문구도 함께 정리해 드릴게요.</p>
+  </section>
+
+  <footer>페이지 보기는 카페 화면과 같은 가로 860px로 열려요. 휴대폰에서는 화면에 맞게 축소돼 보여요.</footer>
 </div>
 </body>
 </html>
