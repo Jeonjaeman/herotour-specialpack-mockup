@@ -179,17 +179,18 @@ section img:not([alt="HERO"]){width:100%;height:auto!important;max-height:1000px
 .solve>img{height:auto!important;max-height:none!important}
 .cta .grid{align-items:start}
 
-/* 표지: 하늘 확장 사진 — 글자를 위쪽 하늘에, 다리(하단 45%)는 비워 둔다 */
+/* 표지: 하늘 확장 사진 — 글자를 위쪽 하늘에, 다리(하단)는 비워 둔다 */
+.cover{height:960px!important}.cover>img{position:absolute!important;inset:0!important;height:100%!important;object-fit:cover!important}
 .cover::after{background:linear-gradient(180deg,rgba(0,0,0,.50) 0%,rgba(0,0,0,.30) 22%,rgba(0,0,0,.08) 40%,rgba(0,0,0,0) 50%)!important}
-.cv-txt{top:150px!important;bottom:auto!important}
+.cv-txt{top:120px!important;bottom:auto!important}
 .cover h1{font-size:72px}.cover h1 em{font-size:56px}
 .cv-sub{max-width:560px}
 .chips{margin-top:26px}
 /* 일차 헤더: 표지와 같은 860×1240 박스, 하늘 확장 사진, 글자는 위쪽 하늘 */
-.dayhead{height:1240px!important;overflow:hidden}
+.dayhead{height:960px!important;overflow:hidden}
 .dayhead>img{position:absolute!important;inset:0!important;width:100%;height:100%!important;object-fit:cover!important;max-height:none!important}
-.dayhead::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.50) 0%,rgba(0,0,0,.30) 22%,rgba(0,0,0,.08) 40%,rgba(0,0,0,0) 50%)}
-.dayhead .dh{top:150px;bottom:auto;left:60px;right:60px}
+.dayhead::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.58) 0%,rgba(0,0,0,.40) 24%,rgba(0,0,0,.12) 42%,rgba(0,0,0,0) 52%)}
+.dayhead .dh{top:120px;bottom:auto;left:60px;right:60px}
 .dayhead h3{font-size:46px}.dayhead .dn{font-size:40px}
 .gif{background:var(--bg);padding:0 60px 60px}.gif-frame{position:relative}
 .gif-frame img{height:auto!important;max-height:none!important}
