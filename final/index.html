@@ -296,6 +296,20 @@ section img:not([alt="HERO"]){width:100%;height:auto!important;max-height:1000px
 .eyebrow{font-weight:700!important;letter-spacing:.12em!important}
 .route b{white-space:normal!important}
 .pics figcaption,.tag{letter-spacing:0!important}
+/* 11/02 고객 2차 요청: 필름 레이아웃에 모던블루(A) 색감(남색 제목·파랑 포인트·하늘색 바탕) */
+:root{--bg:#fff!important;--ink:#1B2430!important;--mute:#6B7685!important;--line:#E3E8EE!important;--accent:#1673D1!important;--soft:#E9F3FC!important;--navy:#0B2545;--blue:#1673D1;--sky:#E9F3FC;--ac:#1673D1}
+body{background:#fff!important;color:var(--ink)!important}
+.h2,.sp-txt h3,.stub h5,.benefits b,.card b,.points b,.ibox h4,.step4 b,.vals b,.faqlist dt,.ov h4,.trio b,.tiplist b,.rv p,.rates td,.route b,.sch-h .dn,.cross4 b{color:var(--navy)!important}
+.h2 em,.eyebrow,.benefits i,.points i,.step4 i,.sp-txt>p b,.rates td.usd,.sch-arr .lbl,.sch-h i,.ibox.yes h4{color:var(--blue)!important}
+.lead,.sp-txt>p,.ticks li{color:#4A5565!important}
+.benefits,.ov,.trio>div,.step4 li,.rv,.rates,.sch-arr{border-top-color:var(--navy)!important}
+.ibox h4{border-bottom-color:var(--navy)!important}
+.ticks li::before,.route li::after{background:var(--blue)!important}
+.sch-day{background:#fff!important;border-color:var(--line)!important}
+.schedule,.massage,.values,.incl,.tips,.reviews{background:var(--sky)!important}
+.banner{background:rgba(22,115,209,.07)!important}
+.cta{background:var(--navy)!important}
+.tag{color:var(--blue)!important}.t-meal,.t-cafe{color:#E2602C!important}.t-spa{color:#5560D6!important}.t-move{color:#6B7685!important}.t-park{color:#0E9F8E!important}
 </style><script>(function(){
 var L=[];document.querySelectorAll('body *').forEach(function(e){
  if(e.closest('.ai-lab'))return;
