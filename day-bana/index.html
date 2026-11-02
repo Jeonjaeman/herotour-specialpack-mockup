@@ -180,7 +180,7 @@ section img:not([alt="HERO"]){width:100%;height:auto!important;max-height:1000px
 .cta .grid{align-items:start}
 
 /* 일정 줄: 시간 칸 없이 픽업 줄만 이름 앞에 시간 + 아래 '미팅' */
-.stub.nt{grid-template-columns:1fr 60px!important}
+.stub.nt{grid-template-columns:1fr auto!important}.stub.nt .tag{white-space:nowrap;text-align:right}
 .stub.nt h5 .tm{display:inline-block;margin-right:12px;font-family:"Playfair Display",serif;font-variant-numeric:lining-nums;font-weight:600;color:var(--accent);font-size:20px}
 .stub.nt p.meet{font-size:13px!important;color:var(--mute);margin-top:2px}
 /* 표지: 하늘 확장 사진 — 글자를 위쪽 하늘에, 다리(하단)는 비워 둔다 */
