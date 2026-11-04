@@ -179,6 +179,8 @@ section img:not([alt="HERO"]){width:100%;height:auto!important;max-height:1000px
 .solve>img{height:auto!important;max-height:none!important}
 .cta .grid{align-items:start}
 
+/* 11/04 안지: 위 1장 크게 + 아래 2장 */
+.pics.top1{grid-template-columns:1fr 1fr!important}.pics.top1 figure:first-child{grid-column:1/3}
 /* 일정 줄: 시간 칸 없이 픽업 줄만 이름 앞에 시간 + 아래 '미팅' */
 .stub.nt{grid-template-columns:1fr auto!important}.stub.nt .tag{white-space:nowrap;text-align:right}
 .stub.nt h5 .tm{display:inline-block;margin-right:12px;font-family:"Playfair Display",serif;font-variant-numeric:lining-nums;font-weight:600;color:var(--accent);font-size:20px}
