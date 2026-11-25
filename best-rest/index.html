@@ -223,7 +223,10 @@ section img:not([alt="HERO"]){width:100%;height:auto!important;max-height:1000px
 .sch-h2 .pin{font-size:20px;line-height:1}.sch-h2 b{font-size:24px;font-weight:800;color:var(--navy,#0B2545);letter-spacing:-0.03em}
 .sch-h2 i{font-style:normal;color:#B8C2CE;font-size:22px;margin:0 2px}.sch-h2 em{font-style:normal;font-size:24px;font-weight:800;color:var(--navy,#0B2545);letter-spacing:-0.03em}
 .sch-ph{margin:0;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(11,37,69,.10)}
-.sch-ph img{width:100%!important;height:400px!important;max-height:none!important;object-fit:cover!important;object-position:center 40%;display:block}
+/* 11/25 고객 요청: 코스표 사진을 골든브릿지 사진 비율로 통일 */
+.sch-day.v2 figure.sch-ph{aspect-ratio:740/415;height:auto}
+.sec .sch-day.v2 figure.sch-ph img,.sch-day.v2 figure.sch-ph img{width:100%!important;height:100%!important;max-height:none!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:center 45%!important;display:block}
+.sec .sch-day.v2 figure.sch-ph img[src*="linhung"]{object-position:center 5%!important}.sec .sch-day.v2 figure.sch-ph img[src*="safari"]{object-position:center 0!important}
 .sch-t{margin:26px 0 0 4px;font-size:16px;font-weight:800;color:var(--blue,#1673D1);letter-spacing:.02em}
 .route.v2{display:grid;gap:22px 0;margin-top:6px;padding:0}
 .route.v2 li{padding:22px 4px 0;text-align:center;min-width:0}
